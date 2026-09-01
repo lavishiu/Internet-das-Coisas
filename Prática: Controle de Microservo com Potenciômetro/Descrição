@@ -1,0 +1,7 @@
+Nesta atividade, foi desenvolvido um sistema de controle de posição, utilizando um potenciômetro e um microservo, simulando uma aplicação de IoT.
+
+O potenciômetro funciona como dispositivo de entrada, permitindo alterar o valor enviado ao Arduino. A leitura é realizada pelo pino analógico A0 e convertida para uma faixa de 0° a 180°.
+
+O Arduino processa o valor recebido e envia o comando para o microservo conectado ao pino digital 9. Dessa forma, ao girar o potenciômetro, a posição do servo é alterada proporcionalmente.
+
+Assim, o projeto demonstra a integração entre um dispositivo de entrada, o processamento realizado pelo Arduino e um atuador, permitindo controlar o movimento do microservo de forma simples e interativa.
