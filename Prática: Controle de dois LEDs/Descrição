@@ -1,0 +1,7 @@
+Nesta atividade, o circuito desenvolvido na prática de ligar o LED foi ampliada para controlar dois LEDs utilizando um botão. 
+
+O botão funciona como dispositivo de entrada, enquanto os dois LEDs representam as saídas do sistema. A cada acionamento do botão, o Arduino altera o estado dos LEDs, seguindo uma sequência programada.
+
+O ciclo de funcionamento possui três estados: no 1º acionamento, o LED 1 acende; no 2º acionamento, o LED 1 apaga e o LED 2 acende; no 3º acionamento, o LED 2 apaga. No 4º acionamento, o ciclo reinicia, acendendo novamente o LED 1.
+
+Para controlar a sequência, foram utilizadas estruturas condicionais (if e else if), leitura digital do botão com digitalRead() e controle dos LEDs com digitalWrite().
