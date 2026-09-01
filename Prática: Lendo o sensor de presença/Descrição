@@ -1,0 +1,5 @@
+Nesta atividade, foi desenvolvido um circuito usando um LED e um botão, simulando um sistema de entrada e saída aplicado à Internet das Coisas (IoT).
+
+O botão, conectado ao pino digital 7, funciona como dispositivo de entrada. Foi utilizado o modo INPUT_PULLUP para realizar a leitura do botão. O LED, conectado ao pino digital 8, funciona como saída e é controlado de acordo com o estado do botão.
+
+Quando o botão não está pressionado, o LED permanece apagado. Quando o botão é apertado, o LED fica aceso.
