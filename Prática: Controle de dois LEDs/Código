@@ -1,0 +1,47 @@
+const int pinoLed1 = 2;
+const int pinoLed2 = 4;
+const int pinoBotao = 3;
+
+int estado = 0;
+int ultimoEstadoBotao = HIGH;
+
+void setup() {
+  pinMode(pinoLed1, OUTPUT);
+  pinMode(pinoLed2, OUTPUT);
+  pinMode(pinoBotao, INPUT_PULLUP);
+
+  digitalWrite(pinoLed1, LOW);
+  digitalWrite(pinoLed2, LOW);
+}
+
+void loop() {
+  int estadoBotao = digitalRead(pinoBotao);
+
+  if (estadoBotao == LOW && ultimoEstadoBotao == HIGH) {
+    
+    estado++;
+
+    if (estado > 3) {
+      estado = 1;
+    }
+
+    if (estado == 1) {
+      digitalWrite(pinoLed1, HIGH);
+      digitalWrite(pinoLed2, LOW);
+    }
+
+    else if (estado == 2) {
+      digitalWrite(pinoLed1, LOW);
+      digitalWrite(pinoLed2, HIGH);
+    }
+
+    else if (estado == 3) {
+      digitalWrite(pinoLed1, LOW);
+      digitalWrite(pinoLed2, LOW);
+    }
+
+    delay(200);
+  }
+
+  ultimoEstadoBotao = estadoBotao;
+}
