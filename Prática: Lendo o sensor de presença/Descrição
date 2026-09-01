@@ -1,0 +1,7 @@
+Nesta atividade, foi desenvolvido um sistema de detecção de movimento, um sensor PIR e um LED, simulando uma aplicação de IoT.
+
+O sensor PIR funciona como dispositivo de entrada, detectando a presença ou o movimento no ambiente. Quando um movimento é identificado, o Arduino recebe o sinal pelo pino digital 7 e aciona o LED conectado ao pino digital 6.
+
+O programa também utiliza o Monitor Serial para informar quando um movimento é detectado. Após a detecção, o LED permanece aceso por aproximadamente 5 segundos. Quando não há movimento, o LED é desligado.
+
+Dessa forma, o projeto demonstra a integração entre sensor, processamento e atuador.
